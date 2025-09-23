@@ -5,9 +5,12 @@ class P12_AverageOfThreeNumbers {
         // Define three numbers
         $numA = 10;
         $numB = 10;
-        $numc = 12;
+        $numC = 12;
 
         // Output the formula and result
         // Write the program here
+        $result = $numA + $numB + $numC;
+        $resultado = $result / 3;
+        echo "The average is $resultado" . "\n";
     }
 }
