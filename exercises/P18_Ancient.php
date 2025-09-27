@@ -13,7 +13,7 @@ class P18_Ancient
 
         // Check year value
         
-        if ((int)$year < 0) {
+        if ((int)$year < 2015) {
             echo "Ancient history!\n";
         }
     }

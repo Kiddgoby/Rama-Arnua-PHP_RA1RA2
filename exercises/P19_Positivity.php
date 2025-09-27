@@ -1,6 +1,6 @@
 <?php
 
-class P18_Ancient
+class P19_Positivity
 {
     public function main(): void
     {
@@ -11,10 +11,10 @@ class P18_Ancient
         $num = trim(fgets($GLOBALS['STDIN'] ?? STDIN));
 
         // Convertir a entero
-        $num = (int)$num;
+        // $num = (int)$num;
 
         // Check number value
-        if ($num > 0) {
+        if ((int)$num > 0) {
             echo "The number is positive.\n";
         } else {
             echo "The number is not positive.\n";
