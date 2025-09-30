@@ -1,10 +1,21 @@
 <?php
-
+ 
 class P32_OnlyPositives
 {
     public function main(): void
     {
-        // Write your code here
-       
+        while (true) {
+            echo "Give a number:\n";
+            $input = trim(fgets($GLOBALS['STDIN'] ?? STDIN));
+            $number = (int)$input;
+
+            if ($number == 0) {
+                break;
+            } elseif ($number < 0) {
+                echo "Unsuitable number\n";
+            } else {
+                echo ($number * $number) . "\n";
+            }
+        }
     }
 }

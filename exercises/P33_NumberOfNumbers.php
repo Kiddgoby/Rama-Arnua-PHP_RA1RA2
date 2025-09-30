@@ -4,7 +4,20 @@ class P33_NumberOfNumbers
 {
     public function main(): void
     {
-        // Write your code here
-        
+        $count = 0;
+
+        while (true) {
+            echo "Give a number:\n";
+            $input = trim(fgets($GLOBALS['STDIN'] ?? STDIN));
+            $number = (int)$input;
+
+            if ($number == 0) {
+                break;
+            }
+
+            $count++;
+        }
+
+        echo "Number of numbers: " . $count . "\n";
     }
 }
